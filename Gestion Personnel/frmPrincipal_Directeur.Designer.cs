@@ -1,4 +1,4 @@
-﻿
+﻿using Gestion_Personnel.CustomControls;
 namespace Gestion_Personnel
 {
     partial class frmPrincipal_Directeur
