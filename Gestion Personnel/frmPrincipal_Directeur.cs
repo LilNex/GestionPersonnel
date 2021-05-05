@@ -24,7 +24,7 @@ namespace Gestion_Personnel
             timer.Start();
             pnlActive.Height = btnDashboard.Height;
             pnlActive.Top = btnDashboard.Top;
-            ucDashboard1.BringToFront();
+            ucDashboard.BringToFront();
         }
         
         private void btnClose_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Gestion_Personnel
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             pnlActive.Top = btnDashboard.Top;
-            ucDashboard1.BringToFront();
+            ucDashboard.BringToFront();
         }
 
         private void btnEmployes_Click(object sender, EventArgs e)
@@ -69,11 +69,13 @@ namespace Gestion_Personnel
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            ucDashboard1.DateNow = DateTime.Now.ToString("F", cultureInfo).ToUpper();
+            ucDashboard.DateNow = DateTime.Now.ToString("F", cultureInfo).ToUpper();
         }
 
-        private void pnlEmployé_Paint(object sender, PaintEventArgs e)
+
+        private void btnParametre_Click(object sender, EventArgs e)
         {
+            pnlActive.Top = btnParametre.Top;
 
         }
     }

@@ -183,7 +183,7 @@ namespace Gestion_Personnel.CustomControls
             this.Controls.Add(this.lblText_Recherche);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Name = "UCListeEmployes";
-            this.Size = new System.Drawing.Size(932, 396);
+            this.Size = new System.Drawing.Size(952, 529);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

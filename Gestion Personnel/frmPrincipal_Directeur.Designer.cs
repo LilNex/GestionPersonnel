@@ -46,7 +46,7 @@ namespace Gestion_Personnel
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
-            this.ucDashboard1 = new Gestion_Personnel.CustomControls.UCDashboard();
+            this.ucDashboard = new Gestion_Personnel.CustomControls.UCDashboard();
             this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
@@ -56,6 +56,7 @@ namespace Gestion_Personnel
             // pnlGauche
             // 
             this.pnlGauche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.pnlGauche.Controls.Add(this.ucProfil1);
             this.pnlGauche.Controls.Add(this.pnlActive);
             this.pnlGauche.Controls.Add(this.btnParametre);
             this.pnlGauche.Controls.Add(this.btnX);
@@ -63,11 +64,10 @@ namespace Gestion_Personnel
             this.pnlGauche.Controls.Add(this.btnGstPaie);
             this.pnlGauche.Controls.Add(this.btnEmployes);
             this.pnlGauche.Controls.Add(this.btnDashboard);
-            this.pnlGauche.Controls.Add(this.ucProfil1);
             this.pnlGauche.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlGauche.Location = new System.Drawing.Point(0, 0);
+            this.pnlGauche.Location = new System.Drawing.Point(0, 32);
             this.pnlGauche.Name = "pnlGauche";
-            this.pnlGauche.Size = new System.Drawing.Size(200, 600);
+            this.pnlGauche.Size = new System.Drawing.Size(200, 568);
             this.pnlGauche.TabIndex = 0;
             // 
             // pnlActive
@@ -100,7 +100,7 @@ namespace Gestion_Personnel
             this.btnParametre.IconVisible = true;
             this.btnParametre.IconZoom = 50D;
             this.btnParametre.IsTab = false;
-            this.btnParametre.Location = new System.Drawing.Point(0, 551);
+            this.btnParametre.Location = new System.Drawing.Point(0, 519);
             this.btnParametre.Margin = new System.Windows.Forms.Padding(0);
             this.btnParametre.Name = "btnParametre";
             this.btnParametre.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
@@ -113,6 +113,7 @@ namespace Gestion_Personnel
             this.btnParametre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnParametre.Textcolor = System.Drawing.Color.White;
             this.btnParametre.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParametre.Click += new System.EventHandler(this.btnParametre_Click);
             // 
             // btnX
             // 
@@ -304,9 +305,10 @@ namespace Gestion_Personnel
             this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.pnlDrag.Controls.Add(this.btnMinimize);
             this.pnlDrag.Controls.Add(this.btnClose);
-            this.pnlDrag.Location = new System.Drawing.Point(197, 0);
+            this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDrag.Location = new System.Drawing.Point(0, 0);
             this.pnlDrag.Name = "pnlDrag";
-            this.pnlDrag.Size = new System.Drawing.Size(955, 32);
+            this.pnlDrag.Size = new System.Drawing.Size(1150, 32);
             this.pnlDrag.TabIndex = 1;
             // 
             // btnMinimize
@@ -331,14 +333,14 @@ namespace Gestion_Personnel
             this.btnMinimize.IconVisible = true;
             this.btnMinimize.IconZoom = 50D;
             this.btnMinimize.IsTab = false;
-            this.btnMinimize.Location = new System.Drawing.Point(893, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(20, 16, 20, 16);
+            this.btnMinimize.Location = new System.Drawing.Point(2715, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Normalcolor = System.Drawing.Color.Transparent;
             this.btnMinimize.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnMinimize.OnHoverTextColor = System.Drawing.Color.White;
             this.btnMinimize.selected = false;
-            this.btnMinimize.Size = new System.Drawing.Size(30, 31);
+            this.btnMinimize.Size = new System.Drawing.Size(80, 69);
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMinimize.Textcolor = System.Drawing.Color.White;
@@ -362,19 +364,19 @@ namespace Gestion_Personnel
             this.btnClose.Iconimage_Selected = null;
             this.btnClose.IconMarginLeft = 0;
             this.btnClose.IconMarginRight = 0;
-            this.btnClose.IconRightVisible = true;
+            this.btnClose.IconRightVisible = false;
             this.btnClose.IconRightZoom = 0D;
-            this.btnClose.IconVisible = true;
+            this.btnClose.IconVisible = false;
             this.btnClose.IconZoom = 50D;
             this.btnClose.IsTab = false;
-            this.btnClose.Location = new System.Drawing.Point(922, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnClose.Location = new System.Drawing.Point(2795, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Normalcolor = System.Drawing.Color.Red;
             this.btnClose.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnClose.OnHoverTextColor = System.Drawing.Color.White;
             this.btnClose.selected = false;
-            this.btnClose.Size = new System.Drawing.Size(30, 33);
+            this.btnClose.Size = new System.Drawing.Size(80, 69);
             this.btnClose.TabIndex = 2;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Textcolor = System.Drawing.Color.White;
@@ -393,7 +395,7 @@ namespace Gestion_Personnel
             this.pnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnlMain.Controls.Add(this.ucEmployes);
-            this.pnlMain.Controls.Add(this.ucDashboard1);
+            this.pnlMain.Controls.Add(this.ucDashboard);
             this.pnlMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlMain.Location = new System.Drawing.Point(200, 32);
             this.pnlMain.Name = "pnlMain";
@@ -411,20 +413,22 @@ namespace Gestion_Personnel
             // 
             // ucEmployes
             // 
+            this.ucEmployes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucEmployes.Location = new System.Drawing.Point(0, 0);
             this.ucEmployes.Margin = new System.Windows.Forms.Padding(1);
             this.ucEmployes.Name = "ucEmployes";
-            this.ucEmployes.Size = new System.Drawing.Size(949, 568);
+            this.ucEmployes.Size = new System.Drawing.Size(952, 569);
             this.ucEmployes.TabIndex = 0;
             // 
-            // ucDashboard1
+            // ucDashboard
             // 
-            this.ucDashboard1.DateNow = "$DateTime.Now$";
-            this.ucDashboard1.Location = new System.Drawing.Point(0, 0);
-            this.ucDashboard1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.ucDashboard1.Name = "ucDashboard1";
-            this.ucDashboard1.Size = new System.Drawing.Size(949, 568);
-            this.ucDashboard1.TabIndex = 1;
+            this.ucDashboard.DateNow = "$DateTime.Now$";
+            this.ucDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucDashboard.Location = new System.Drawing.Point(0, 0);
+            this.ucDashboard.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ucDashboard.Name = "ucDashboard";
+            this.ucDashboard.Size = new System.Drawing.Size(952, 569);
+            this.ucDashboard.TabIndex = 1;
             // 
             // ucProfil1
             // 
@@ -437,8 +441,8 @@ namespace Gestion_Personnel
             // 
             // frmPrincipal_Directeur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1150, 600);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlGauche);
@@ -475,6 +479,6 @@ namespace Gestion_Personnel
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Timer timer;
         private CustomControls.UCEmployes ucEmployes;
-        private CustomControls.UCDashboard ucDashboard1;
+        private CustomControls.UCDashboard ucDashboard;
     }
 }

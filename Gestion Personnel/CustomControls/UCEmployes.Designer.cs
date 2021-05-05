@@ -31,7 +31,8 @@ namespace Gestion_Personnel.CustomControls
         {
             this.btnAjouterEmploye = new System.Windows.Forms.Button();
             this.btnListeEmployes = new System.Windows.Forms.Button();
-            this.ucListeEmployes1 = new Gestion_Personnel.CustomControls.UCListeEmployes();
+            this.ucListeEmployes = new Gestion_Personnel.CustomControls.UCListeEmployes();
+            this.ucAjoutEmploye = new Gestion_Personnel.CustomControls.UCAjoutEmploye();
             this.SuspendLayout();
             // 
             // btnAjouterEmploye
@@ -45,11 +46,12 @@ namespace Gestion_Personnel.CustomControls
             this.btnAjouterEmploye.Location = new System.Drawing.Point(225, 0);
             this.btnAjouterEmploye.Margin = new System.Windows.Forms.Padding(0);
             this.btnAjouterEmploye.Name = "btnAjouterEmploye";
-            this.btnAjouterEmploye.Size = new System.Drawing.Size(225, 41);
+            this.btnAjouterEmploye.Size = new System.Drawing.Size(225, 42);
             this.btnAjouterEmploye.TabIndex = 5;
             this.btnAjouterEmploye.Text = "Ajouter un employé";
             this.btnAjouterEmploye.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAjouterEmploye.UseVisualStyleBackColor = false;
+            this.btnAjouterEmploye.Click += new System.EventHandler(this.btnAjouterEmploye_Click);
             // 
             // btnListeEmployes
             // 
@@ -62,29 +64,38 @@ namespace Gestion_Personnel.CustomControls
             this.btnListeEmployes.Location = new System.Drawing.Point(0, 0);
             this.btnListeEmployes.Margin = new System.Windows.Forms.Padding(0);
             this.btnListeEmployes.Name = "btnListeEmployes";
-            this.btnListeEmployes.Size = new System.Drawing.Size(225, 41);
+            this.btnListeEmployes.Size = new System.Drawing.Size(225, 42);
             this.btnListeEmployes.TabIndex = 4;
             this.btnListeEmployes.Text = "Liste des employés";
             this.btnListeEmployes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListeEmployes.UseVisualStyleBackColor = false;
             this.btnListeEmployes.Click += new System.EventHandler(this.btnListeEmployes_Click);
             // 
-            // ucListeEmployes1
+            // ucListeEmployes
             // 
-            this.ucListeEmployes1.Location = new System.Drawing.Point(0, 40);
-            this.ucListeEmployes1.Name = "ucListeEmployes1";
-            this.ucListeEmployes1.Size = new System.Drawing.Size(932, 396);
-            this.ucListeEmployes1.TabIndex = 6;
+            this.ucListeEmployes.Location = new System.Drawing.Point(0, 40);
+            this.ucListeEmployes.Name = "ucListeEmployes";
+            this.ucListeEmployes.Size = new System.Drawing.Size(952, 529);
+            this.ucListeEmployes.TabIndex = 6;
+            // 
+            // ucAjoutEmploye
+            // 
+            this.ucAjoutEmploye.Location = new System.Drawing.Point(0, 40);
+            this.ucAjoutEmploye.Name = "ucAjoutEmploye";
+            this.ucAjoutEmploye.Size = new System.Drawing.Size(952, 529);
+            this.ucAjoutEmploye.TabIndex = 7;
             // 
             // UCEmployes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.ucListeEmployes1);
             this.Controls.Add(this.btnAjouterEmploye);
             this.Controls.Add(this.btnListeEmployes);
+            this.Controls.Add(this.ucListeEmployes);
+            this.Controls.Add(this.ucAjoutEmploye);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UCEmployes";
-            this.Size = new System.Drawing.Size(932, 436);
+            this.Size = new System.Drawing.Size(952, 569);
+            this.Load += new System.EventHandler(this.UCEmployes_Load);
             this.ResumeLayout(false);
 
         }
@@ -93,6 +104,7 @@ namespace Gestion_Personnel.CustomControls
 
         private System.Windows.Forms.Button btnAjouterEmploye;
         private System.Windows.Forms.Button btnListeEmployes;
-        private UCListeEmployes ucListeEmployes1;
+        private UCListeEmployes ucListeEmployes;
+        private UCAjoutEmploye ucAjoutEmploye;
     }
 }
