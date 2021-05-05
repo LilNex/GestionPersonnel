@@ -16,7 +16,7 @@ namespace Gestion_Personnel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal_Directeur());
+            Application.Run(new Form1());
         }
     }
 }
