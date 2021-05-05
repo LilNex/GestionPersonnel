@@ -34,7 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>Resources\Bunifu_UI_v1.52.dll</HintPath>
+      <!--<HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>-->
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UCEmployes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCEmployes.Designer.cs">
+      <DependentUpon>UCEmployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UCListeEmployes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCListeEmployes.Designer.cs">
+      <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\UCProfil.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,6 +89,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomControls\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UCEmployes.resx">
+      <DependentUpon>UCEmployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UCListeEmployes.resx">
+      <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCProfil.resx">
       <DependentUpon>UCProfil.cs</DependentUpon>
     </EmbeddedResource>

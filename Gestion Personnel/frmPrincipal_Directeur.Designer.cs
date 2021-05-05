@@ -1,4 +1,4 @@
-﻿
+﻿using System.Drawing;
 namespace Gestion_Personnel
 {
     partial class frmPrincipal_Directeur
@@ -31,27 +31,31 @@ namespace Gestion_Personnel
         {
             this.components = new System.ComponentModel.Container();
             this.pnlGauche = new System.Windows.Forms.Panel();
+            this.pnlActive = new System.Windows.Forms.Panel();
             this.btnParametre = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnX = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDemandes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGstPaie = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmployes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlDrag = new System.Windows.Forms.Panel();
             this.btnMinimize = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnClose = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bnfDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.pnlActive = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
+            this.ucDashboard1 = new Gestion_Personnel.CustomControls.UCDashboard();
+            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlGauche
             // 
-            this.pnlGauche.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlGauche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.pnlGauche.Controls.Add(this.pnlActive);
             this.pnlGauche.Controls.Add(this.btnParametre);
             this.pnlGauche.Controls.Add(this.btnX);
@@ -66,15 +70,23 @@ namespace Gestion_Personnel
             this.pnlGauche.Size = new System.Drawing.Size(200, 600);
             this.pnlGauche.TabIndex = 0;
             // 
+            // pnlActive
+            // 
+            this.pnlActive.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pnlActive.Location = new System.Drawing.Point(0, 185);
+            this.pnlActive.Name = "pnlActive";
+            this.pnlActive.Size = new System.Drawing.Size(12, 49);
+            this.pnlActive.TabIndex = 0;
+            // 
             // btnParametre
             // 
-            this.btnParametre.Activecolor = System.Drawing.Color.SteelBlue;
-            this.btnParametre.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnParametre.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnParametre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnParametre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnParametre.BorderRadius = 0;
             this.btnParametre.ButtonText = "Paramètre";
             this.btnParametre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnParametre.DisabledColor = System.Drawing.Color.Gray;
+            this.btnParametre.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnParametre.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParametre.Iconcolor = System.Drawing.Color.Transparent;
             this.btnParametre.Iconimage = null;
@@ -91,7 +103,7 @@ namespace Gestion_Personnel
             this.btnParametre.Location = new System.Drawing.Point(0, 551);
             this.btnParametre.Margin = new System.Windows.Forms.Padding(0);
             this.btnParametre.Name = "btnParametre";
-            this.btnParametre.Normalcolor = System.Drawing.Color.SteelBlue;
+            this.btnParametre.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnParametre.OnHovercolor = System.Drawing.Color.LightSkyBlue;
             this.btnParametre.OnHoverTextColor = System.Drawing.Color.White;
             this.btnParametre.selected = false;
@@ -105,12 +117,12 @@ namespace Gestion_Personnel
             // btnX
             // 
             this.btnX.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnX.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnX.BorderRadius = 0;
             this.btnX.ButtonText = "Dashboard";
             this.btnX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnX.DisabledColor = System.Drawing.Color.Gray;
+            this.btnX.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnX.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnX.Iconcolor = System.Drawing.Color.Transparent;
             this.btnX.Iconimage = null;
@@ -127,8 +139,8 @@ namespace Gestion_Personnel
             this.btnX.Location = new System.Drawing.Point(0, 381);
             this.btnX.Margin = new System.Windows.Forms.Padding(0);
             this.btnX.Name = "btnX";
-            this.btnX.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.btnX.OnHovercolor = System.Drawing.Color.LightSkyBlue;
+            this.btnX.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnX.OnHovercolor = System.Drawing.SystemColors.Highlight;
             this.btnX.OnHoverTextColor = System.Drawing.Color.White;
             this.btnX.selected = false;
             this.btnX.Size = new System.Drawing.Size(202, 49);
@@ -142,12 +154,12 @@ namespace Gestion_Personnel
             // btnDemandes
             // 
             this.btnDemandes.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnDemandes.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDemandes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnDemandes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDemandes.BorderRadius = 0;
             this.btnDemandes.ButtonText = "Demandes";
             this.btnDemandes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDemandes.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDemandes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnDemandes.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDemandes.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDemandes.Iconimage = null;
@@ -164,8 +176,8 @@ namespace Gestion_Personnel
             this.btnDemandes.Location = new System.Drawing.Point(0, 332);
             this.btnDemandes.Margin = new System.Windows.Forms.Padding(0);
             this.btnDemandes.Name = "btnDemandes";
-            this.btnDemandes.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.btnDemandes.OnHovercolor = System.Drawing.Color.LightSkyBlue;
+            this.btnDemandes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnDemandes.OnHovercolor = System.Drawing.SystemColors.Highlight;
             this.btnDemandes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDemandes.selected = false;
             this.btnDemandes.Size = new System.Drawing.Size(202, 49);
@@ -179,12 +191,12 @@ namespace Gestion_Personnel
             // btnGstPaie
             // 
             this.btnGstPaie.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnGstPaie.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnGstPaie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnGstPaie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGstPaie.BorderRadius = 0;
             this.btnGstPaie.ButtonText = "Gestion de paie";
             this.btnGstPaie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGstPaie.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGstPaie.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnGstPaie.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGstPaie.Iconcolor = System.Drawing.Color.Transparent;
             this.btnGstPaie.Iconimage = null;
@@ -201,8 +213,8 @@ namespace Gestion_Personnel
             this.btnGstPaie.Location = new System.Drawing.Point(0, 283);
             this.btnGstPaie.Margin = new System.Windows.Forms.Padding(0);
             this.btnGstPaie.Name = "btnGstPaie";
-            this.btnGstPaie.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.btnGstPaie.OnHovercolor = System.Drawing.Color.LightSkyBlue;
+            this.btnGstPaie.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnGstPaie.OnHovercolor = System.Drawing.SystemColors.Highlight;
             this.btnGstPaie.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGstPaie.selected = false;
             this.btnGstPaie.Size = new System.Drawing.Size(202, 49);
@@ -216,12 +228,12 @@ namespace Gestion_Personnel
             // btnEmployes
             // 
             this.btnEmployes.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnEmployes.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnEmployes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnEmployes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEmployes.BorderRadius = 0;
             this.btnEmployes.ButtonText = "Employées";
             this.btnEmployes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEmployes.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEmployes.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnEmployes.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployes.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEmployes.Iconimage = null;
@@ -238,8 +250,8 @@ namespace Gestion_Personnel
             this.btnEmployes.Location = new System.Drawing.Point(0, 234);
             this.btnEmployes.Margin = new System.Windows.Forms.Padding(0);
             this.btnEmployes.Name = "btnEmployes";
-            this.btnEmployes.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.btnEmployes.OnHovercolor = System.Drawing.Color.LightSkyBlue;
+            this.btnEmployes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnEmployes.OnHovercolor = System.Drawing.SystemColors.Highlight;
             this.btnEmployes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmployes.selected = false;
             this.btnEmployes.Size = new System.Drawing.Size(202, 49);
@@ -253,12 +265,12 @@ namespace Gestion_Personnel
             // btnDashboard
             // 
             this.btnDashboard.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnDashboard.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashboard.BorderRadius = 0;
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDashboard.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnDashboard.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = null;
@@ -275,8 +287,8 @@ namespace Gestion_Personnel
             this.btnDashboard.Location = new System.Drawing.Point(0, 185);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.btnDashboard.OnHovercolor = System.Drawing.Color.LightSkyBlue;
+            this.btnDashboard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnDashboard.OnHovercolor = System.Drawing.SystemColors.Highlight;
             this.btnDashboard.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDashboard.selected = false;
             this.btnDashboard.Size = new System.Drawing.Size(202, 49);
@@ -287,17 +299,9 @@ namespace Gestion_Personnel
             this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // ucProfil1
-            // 
-            this.ucProfil1.BackColor = System.Drawing.Color.Gray;
-            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
-            this.ucProfil1.Name = "ucProfil1";
-            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
-            this.ucProfil1.TabIndex = 0;
-            // 
             // pnlDrag
             // 
-            this.pnlDrag.BackColor = System.Drawing.Color.Gray;
+            this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.pnlDrag.Controls.Add(this.btnMinimize);
             this.pnlDrag.Controls.Add(this.btnClose);
             this.pnlDrag.Location = new System.Drawing.Point(197, 0);
@@ -314,7 +318,7 @@ namespace Gestion_Personnel
             this.btnMinimize.BorderRadius = 0;
             this.btnMinimize.ButtonText = "";
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.DisabledColor = System.Drawing.Color.Gray;
+            this.btnMinimize.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnMinimize.Iconcolor = System.Drawing.Color.Transparent;
             this.btnMinimize.Iconimage = null;
             this.btnMinimize.Iconimage_right = null;
@@ -350,7 +354,7 @@ namespace Gestion_Personnel
             this.btnClose.BorderRadius = 0;
             this.btnClose.ButtonText = "";
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.DisabledColor = System.Drawing.Color.Gray;
+            this.btnClose.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnClose.Iconcolor = System.Drawing.Color.Transparent;
             this.btnClose.Iconimage = null;
             this.btnClose.Iconimage_right = null;
@@ -387,25 +391,49 @@ namespace Gestion_Personnel
             // pnlMain
             // 
             this.pnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlMain.Controls.Add(this.ucEmployes);
+            this.pnlMain.Controls.Add(this.ucDashboard1);
             this.pnlMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlMain.Location = new System.Drawing.Point(200, 32);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(952, 569);
             this.pnlMain.TabIndex = 2;
             // 
-            // pnlActive
-            // 
-            this.pnlActive.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pnlActive.Location = new System.Drawing.Point(0, 185);
-            this.pnlActive.Name = "pnlActive";
-            this.pnlActive.Size = new System.Drawing.Size(12, 49);
-            this.pnlActive.TabIndex = 0;
-            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 25;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // ucEmployes
+            // 
+            this.ucEmployes.Location = new System.Drawing.Point(0, 0);
+            this.ucEmployes.Margin = new System.Windows.Forms.Padding(1);
+            this.ucEmployes.Name = "ucEmployes";
+            this.ucEmployes.Size = new System.Drawing.Size(949, 568);
+            this.ucEmployes.TabIndex = 0;
+            // 
+            // ucDashboard1
+            // 
+            this.ucDashboard1.DateNow = "$DateTime.Now$";
+            this.ucDashboard1.Location = new System.Drawing.Point(0, 0);
+            this.ucDashboard1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ucDashboard1.Name = "ucDashboard1";
+            this.ucDashboard1.Size = new System.Drawing.Size(949, 568);
+            this.ucDashboard1.TabIndex = 1;
+            // 
+            // ucProfil1
+            // 
+            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.ucProfil1.ForeColor = System.Drawing.Color.White;
+            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
+            this.ucProfil1.Name = "ucProfil1";
+            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
+            this.ucProfil1.TabIndex = 0;
             // 
             // frmPrincipal_Directeur
             // 
@@ -423,6 +451,7 @@ namespace Gestion_Personnel
             this.Text = "frmPrincipal_Directeur";
             this.pnlGauche.ResumeLayout(false);
             this.pnlDrag.ResumeLayout(false);
+            this.pnlMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -444,5 +473,8 @@ namespace Gestion_Personnel
         private Bunifu.Framework.UI.BunifuFlatButton btnParametre;
         private System.Windows.Forms.Panel pnlActive;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Timer timer;
+        private CustomControls.UCEmployes ucEmployes;
+        private CustomControls.UCDashboard ucDashboard1;
     }
 }
