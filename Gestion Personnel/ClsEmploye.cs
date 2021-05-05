@@ -11,6 +11,9 @@ namespace Gestion_Personnel
         private string nom;
         private String prenom;
         private int num;
+        private string télephone;
+        private string email;
+        
 
         public string Nom
         {
