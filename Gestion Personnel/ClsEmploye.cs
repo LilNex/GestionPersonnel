@@ -10,6 +10,7 @@ namespace Gestion_Personnel
     {
         private string nom;
         private String prenom;
+        private int num;
 
         public string Nom
         {
@@ -55,5 +56,7 @@ namespace Gestion_Personnel
                 }
             }
         }
+
+        public int Num { get => num; set => num = value; }
     }
 }
