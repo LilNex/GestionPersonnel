@@ -64,5 +64,15 @@ namespace Gestion_Personnel
 
         public int Num { get => num; set => num = value; }
         public string Cin { get => cin; set => cin = value; }
+        public string Télephone { get => télephone; set => télephone = value; }
+        public string Email { get => email; set => email = value; }
+        public char Situation_familiale { get => situation_familiale; set => situation_familiale = value; }
+        public string Competence { get => competence; set => competence = value; }
+        public DateTime Date_debut { get => date_debut; set => date_debut = value; }
+        public DateTime Date_naissance { get => date_naissance; set => date_naissance = value; }
+        public char Sex { get => sex; set => sex = value; }
+        public string Adresse { get => adresse; set => adresse = value; }
+        public int Salaire { get => salaire; set => salaire = value; }
+        public string Rfid { get => rfid; set => rfid = value; }
     }
 }
