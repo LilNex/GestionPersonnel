@@ -12,8 +12,17 @@ namespace Gestion_Personnel
         private String prenom;
         private int num;
         private string télephone;
-        private string email;
-        
+        private string email;       
+        private string cin;
+        private char situation_familiale;
+        private string competence;
+        private DateTime date_debut;
+        private DateTime date_naissance;
+        private char sex;
+        private string adresse;
+        private int salaire;
+        private string rfid;
+
 
         public string Nom
         {
