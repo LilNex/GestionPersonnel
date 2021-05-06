@@ -63,5 +63,6 @@ namespace Gestion_Personnel
         }
 
         public int Num { get => num; set => num = value; }
+        public string Cin { get => cin; set => cin = value; }
     }
 }
