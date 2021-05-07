@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsDepartement.cs" />
     <Compile Include="ClsEmploye.cs" />
     <Compile Include="clsPoste.cs" />
     <Compile Include="CustomControls\UCAjoutEmploye.cs">
