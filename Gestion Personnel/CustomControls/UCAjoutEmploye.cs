@@ -26,5 +26,10 @@ namespace Gestion_Personnel.CustomControls
         {
 
         }
+
+        private void txtAdresse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

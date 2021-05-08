@@ -101,40 +101,40 @@ namespace Gestion_Personnel.CustomControls
             // lblText_Prenom
             // 
             this.lblText_Prenom.AutoSize = true;
-            this.lblText_Prenom.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Prenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Prenom.Location = new System.Drawing.Point(142, 114);
             this.lblText_Prenom.Name = "lblText_Prenom";
-            this.lblText_Prenom.Size = new System.Drawing.Size(60, 17);
+            this.lblText_Prenom.Size = new System.Drawing.Size(61, 16);
             this.lblText_Prenom.TabIndex = 19;
             this.lblText_Prenom.Text = "Prénom :";
             // 
             // lblText_Nom
             // 
             this.lblText_Nom.AutoSize = true;
-            this.lblText_Nom.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Nom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Nom.Location = new System.Drawing.Point(142, 71);
             this.lblText_Nom.Name = "lblText_Nom";
-            this.lblText_Nom.Size = new System.Drawing.Size(44, 17);
+            this.lblText_Nom.Size = new System.Drawing.Size(43, 16);
             this.lblText_Nom.TabIndex = 18;
             this.lblText_Nom.Text = "Nom :";
             // 
             // lblText_Numero
             // 
             this.lblText_Numero.AutoSize = true;
-            this.lblText_Numero.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Numero.Location = new System.Drawing.Point(142, 28);
             this.lblText_Numero.Name = "lblText_Numero";
-            this.lblText_Numero.Size = new System.Drawing.Size(63, 17);
+            this.lblText_Numero.Size = new System.Drawing.Size(62, 16);
             this.lblText_Numero.TabIndex = 17;
             this.lblText_Numero.Text = "Numéro :";
             // 
             // lblText_Ajout
             // 
             this.lblText_Ajout.AutoSize = true;
-            this.lblText_Ajout.Font = new System.Drawing.Font("Yu Gothic UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Ajout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Ajout.Location = new System.Drawing.Point(3, 0);
             this.lblText_Ajout.Name = "lblText_Ajout";
-            this.lblText_Ajout.Size = new System.Drawing.Size(180, 25);
+            this.lblText_Ajout.Size = new System.Drawing.Size(183, 24);
             this.lblText_Ajout.TabIndex = 16;
             this.lblText_Ajout.Text = "Ajout d\'un employé :";
             // 
@@ -162,10 +162,10 @@ namespace Gestion_Personnel.CustomControls
             // lblText_DateNaissance
             // 
             this.lblText_DateNaissance.AutoSize = true;
-            this.lblText_DateNaissance.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_DateNaissance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_DateNaissance.Location = new System.Drawing.Point(5, 159);
             this.lblText_DateNaissance.Name = "lblText_DateNaissance";
-            this.lblText_DateNaissance.Size = new System.Drawing.Size(121, 17);
+            this.lblText_DateNaissance.Size = new System.Drawing.Size(127, 16);
             this.lblText_DateNaissance.TabIndex = 25;
             this.lblText_DateNaissance.Text = "Date de naissance :";
             // 
@@ -179,6 +179,7 @@ namespace Gestion_Personnel.CustomControls
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(271, 61);
             this.txtAdresse.TabIndex = 32;
+            this.txtAdresse.TextChanged += new System.EventHandler(this.txtAdresse_TextChanged);
             // 
             // txtEmail
             // 
@@ -205,40 +206,40 @@ namespace Gestion_Personnel.CustomControls
             // lblText_Adresse
             // 
             this.lblText_Adresse.AutoSize = true;
-            this.lblText_Adresse.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Adresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Adresse.Location = new System.Drawing.Point(8, 286);
             this.lblText_Adresse.Name = "lblText_Adresse";
-            this.lblText_Adresse.Size = new System.Drawing.Size(62, 17);
+            this.lblText_Adresse.Size = new System.Drawing.Size(65, 16);
             this.lblText_Adresse.TabIndex = 29;
             this.lblText_Adresse.Text = "Adresse :";
             // 
             // lblText_Email
             // 
             this.lblText_Email.AutoSize = true;
-            this.lblText_Email.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Email.Location = new System.Drawing.Point(162, 243);
             this.lblText_Email.Name = "lblText_Email";
-            this.lblText_Email.Size = new System.Drawing.Size(46, 17);
+            this.lblText_Email.Size = new System.Drawing.Size(48, 16);
             this.lblText_Email.TabIndex = 28;
             this.lblText_Email.Text = "Email :";
             // 
             // lblText_NumTel
             // 
             this.lblText_NumTel.AutoSize = true;
-            this.lblText_NumTel.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_NumTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_NumTel.Location = new System.Drawing.Point(8, 243);
             this.lblText_NumTel.Name = "lblText_NumTel";
-            this.lblText_NumTel.Size = new System.Drawing.Size(144, 17);
+            this.lblText_NumTel.Size = new System.Drawing.Size(144, 16);
             this.lblText_NumTel.TabIndex = 27;
             this.lblText_NumTel.Text = "Numéro de téléphone :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 218);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
+            this.label4.Size = new System.Drawing.Size(125, 24);
             this.label4.TabIndex = 33;
             this.label4.Text = "Coordonées :";
             // 
@@ -267,30 +268,30 @@ namespace Gestion_Personnel.CustomControls
             // lblText_Competence
             // 
             this.lblText_Competence.AutoSize = true;
-            this.lblText_Competence.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_Competence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_Competence.Location = new System.Drawing.Point(298, 71);
             this.lblText_Competence.Name = "lblText_Competence";
-            this.lblText_Competence.Size = new System.Drawing.Size(87, 17);
+            this.lblText_Competence.Size = new System.Drawing.Size(92, 16);
             this.lblText_Competence.TabIndex = 35;
             this.lblText_Competence.Text = "Compétences";
             // 
             // lblText_CIN
             // 
             this.lblText_CIN.AutoSize = true;
-            this.lblText_CIN.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText_CIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText_CIN.Location = new System.Drawing.Point(298, 28);
             this.lblText_CIN.Name = "lblText_CIN";
-            this.lblText_CIN.Size = new System.Drawing.Size(36, 17);
+            this.lblText_CIN.Size = new System.Drawing.Size(36, 16);
             this.lblText_CIN.TabIndex = 34;
             this.lblText_CIN.Text = "CIN :";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Yu Gothic UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(299, 218);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 25);
+            this.label8.Size = new System.Drawing.Size(165, 24);
             this.label8.TabIndex = 40;
             this.label8.Text = "Compte Bancaire :";
             // 
@@ -330,30 +331,30 @@ namespace Gestion_Personnel.CustomControls
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(301, 329);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 43;
             this.label1.Text = "Banque :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(301, 286);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
+            this.label2.Size = new System.Drawing.Size(36, 16);
             this.label2.TabIndex = 42;
             this.label2.Text = "RIB :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(301, 243);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 17);
+            this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 41;
             this.label3.Text = "Nom Titulaire :";
             // 
@@ -361,7 +362,7 @@ namespace Gestion_Personnel.CustomControls
             // 
             this.grpSexe.Controls.Add(this.rdbF);
             this.grpSexe.Controls.Add(this.rdbH);
-            this.grpSexe.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSexe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSexe.Location = new System.Drawing.Point(431, 28);
             this.grpSexe.Name = "grpSexe";
             this.grpSexe.Size = new System.Drawing.Size(154, 42);
@@ -372,9 +373,11 @@ namespace Gestion_Personnel.CustomControls
             // rdbF
             // 
             this.rdbF.AutoSize = true;
+            this.rdbF.FlatAppearance.BorderSize = 0;
+            this.rdbF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdbF.Location = new System.Drawing.Point(84, 17);
             this.rdbF.Name = "rdbF";
-            this.rdbF.Size = new System.Drawing.Size(67, 21);
+            this.rdbF.Size = new System.Drawing.Size(71, 20);
             this.rdbF.TabIndex = 1;
             this.rdbF.TabStop = true;
             this.rdbF.Text = "Femme";
@@ -384,9 +387,11 @@ namespace Gestion_Personnel.CustomControls
             // rdbH
             // 
             this.rdbH.AutoSize = true;
+            this.rdbH.FlatAppearance.BorderSize = 0;
+            this.rdbH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rdbH.Location = new System.Drawing.Point(6, 17);
             this.rdbH.Name = "rdbH";
-            this.rdbH.Size = new System.Drawing.Size(72, 21);
+            this.rdbH.Size = new System.Drawing.Size(73, 20);
             this.rdbH.TabIndex = 0;
             this.rdbH.TabStop = true;
             this.rdbH.Text = "Homme";
@@ -396,10 +401,10 @@ namespace Gestion_Personnel.CustomControls
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 370);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 25);
+            this.label5.Size = new System.Drawing.Size(88, 24);
             this.label5.TabIndex = 48;
             this.label5.Text = "Contrats :";
             // 

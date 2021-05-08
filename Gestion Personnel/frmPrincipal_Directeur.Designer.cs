@@ -39,8 +39,8 @@ namespace Gestion_Personnel
             this.btnEmployes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlDrag = new System.Windows.Forms.Panel();
-            this.btnMinimize = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnClose = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.bnfDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -303,8 +303,8 @@ namespace Gestion_Personnel
             // pnlDrag
             // 
             this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.pnlDrag.Controls.Add(this.btnMinimize);
             this.pnlDrag.Controls.Add(this.btnClose);
+            this.pnlDrag.Controls.Add(this.btnMinimize);
             this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDrag.Location = new System.Drawing.Point(0, 0);
             this.pnlDrag.Name = "pnlDrag";
@@ -313,74 +313,37 @@ namespace Gestion_Personnel
             // 
             // btnMinimize
             // 
-            this.btnMinimize.Activecolor = System.Drawing.Color.Transparent;
-            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnMinimize.BackgroundImage = global::Gestion_Personnel.Properties.Resources.icons8_minus_24px_1;
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnMinimize.BorderRadius = 0;
-            this.btnMinimize.ButtonText = "";
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnMinimize.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMinimize.Iconimage = null;
-            this.btnMinimize.Iconimage_right = null;
-            this.btnMinimize.Iconimage_right_Selected = null;
-            this.btnMinimize.Iconimage_Selected = null;
-            this.btnMinimize.IconMarginLeft = 0;
-            this.btnMinimize.IconMarginRight = 0;
-            this.btnMinimize.IconRightVisible = true;
-            this.btnMinimize.IconRightZoom = 0D;
-            this.btnMinimize.IconVisible = true;
-            this.btnMinimize.IconZoom = 50D;
-            this.btnMinimize.IsTab = false;
-            this.btnMinimize.Location = new System.Drawing.Point(2715, 0);
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Location = new System.Drawing.Point(1086, 0);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnMinimize.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnMinimize.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnMinimize.selected = false;
-            this.btnMinimize.Size = new System.Drawing.Size(80, 69);
+            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinimize.Textcolor = System.Drawing.Color.White;
-            this.btnMinimize.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Activecolor = System.Drawing.Color.Red;
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.BackgroundImage = global::Gestion_Personnel.Properties.Resources.icons8_multiply_26px_4;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnClose.BorderRadius = 0;
-            this.btnClose.ButtonText = "";
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnClose.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnClose.Iconimage = null;
-            this.btnClose.Iconimage_right = null;
-            this.btnClose.Iconimage_right_Selected = null;
-            this.btnClose.Iconimage_Selected = null;
-            this.btnClose.IconMarginLeft = 0;
-            this.btnClose.IconMarginRight = 0;
-            this.btnClose.IconRightVisible = false;
-            this.btnClose.IconRightZoom = 0D;
-            this.btnClose.IconVisible = false;
-            this.btnClose.IconZoom = 50D;
-            this.btnClose.IsTab = false;
-            this.btnClose.Location = new System.Drawing.Point(2795, 2);
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Location = new System.Drawing.Point(1118, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Normalcolor = System.Drawing.Color.Red;
-            this.btnClose.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClose.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnClose.selected = false;
-            this.btnClose.Size = new System.Drawing.Size(80, 69);
+            this.btnClose.Size = new System.Drawing.Size(32, 32);
             this.btnClose.TabIndex = 2;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Textcolor = System.Drawing.Color.White;
-            this.btnClose.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // bnfDragControl
@@ -465,8 +428,8 @@ namespace Gestion_Personnel
         private System.Windows.Forms.Panel pnlGauche;
         private System.Windows.Forms.Panel pnlDrag;
         private Bunifu.Framework.UI.BunifuDragControl bnfDragControl;
-        private Bunifu.Framework.UI.BunifuFlatButton btnClose;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMinimize;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
         private CustomControls.UCProfil ucProfil1;
         private System.Windows.Forms.Panel pnlMain;
         private Bunifu.Framework.UI.BunifuFlatButton btnDashboard;
