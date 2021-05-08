@@ -16,5 +16,16 @@ namespace Gestion_Personnel.CustomControls
         {
             InitializeComponent();
         }
+
+        private void UCListeEmployes_Load(object sender, EventArgs e)
+        {
+            dgvListeEmployes.Font = new Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dgvListeEmployes.BackgroundColor = Color.White;
+        }
+
+        private void dgvListeEmployes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
