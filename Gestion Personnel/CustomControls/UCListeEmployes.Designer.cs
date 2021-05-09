@@ -29,8 +29,7 @@ namespace Gestion_Personnel.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtRecherchePrenom = new System.Windows.Forms.TextBox();
             this.txtRechercheNom = new System.Windows.Forms.TextBox();
             this.txtRechercheNum = new System.Windows.Forms.TextBox();
@@ -38,51 +37,54 @@ namespace Gestion_Personnel.CustomControls
             this.lblText_ParNom = new System.Windows.Forms.Label();
             this.lblText_ParNumero = new System.Windows.Forms.Label();
             this.lblText_Recherche = new System.Windows.Forms.Label();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvListeEmployes = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmployes)).BeginInit();
             this.SuspendLayout();
             // 
             // txtRecherchePrenom
             // 
             this.txtRecherchePrenom.BackColor = System.Drawing.Color.DarkGray;
             this.txtRecherchePrenom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRecherchePrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.txtRecherchePrenom.Location = new System.Drawing.Point(285, 45);
-            this.txtRecherchePrenom.Multiline = true;
+            this.txtRecherchePrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtRecherchePrenom.Location = new System.Drawing.Point(278, 45);
             this.txtRecherchePrenom.Name = "txtRecherchePrenom";
-            this.txtRecherchePrenom.Size = new System.Drawing.Size(124, 20);
+            this.txtRecherchePrenom.Size = new System.Drawing.Size(124, 19);
             this.txtRecherchePrenom.TabIndex = 15;
             // 
             // txtRechercheNom
             // 
             this.txtRechercheNom.BackColor = System.Drawing.Color.DarkGray;
             this.txtRechercheNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRechercheNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.txtRechercheNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtRechercheNom.Location = new System.Drawing.Point(145, 45);
-            this.txtRechercheNom.Multiline = true;
             this.txtRechercheNom.Name = "txtRechercheNom";
-            this.txtRechercheNom.Size = new System.Drawing.Size(124, 20);
+            this.txtRechercheNom.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNom.TabIndex = 14;
             // 
             // txtRechercheNum
             // 
             this.txtRechercheNum.BackColor = System.Drawing.Color.DarkGray;
             this.txtRechercheNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRechercheNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.txtRechercheNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtRechercheNum.Location = new System.Drawing.Point(8, 45);
-            this.txtRechercheNum.Multiline = true;
             this.txtRechercheNum.Name = "txtRechercheNum";
-            this.txtRechercheNum.Size = new System.Drawing.Size(124, 20);
+            this.txtRechercheNum.Size = new System.Drawing.Size(124, 19);
             this.txtRechercheNum.TabIndex = 13;
             // 
             // lblText_ParPrenom
             // 
             this.lblText_ParPrenom.AutoSize = true;
             this.lblText_ParPrenom.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText_ParPrenom.Location = new System.Drawing.Point(282, 25);
+            this.lblText_ParPrenom.Location = new System.Drawing.Point(275, 25);
             this.lblText_ParPrenom.Name = "lblText_ParPrenom";
             this.lblText_ParPrenom.Size = new System.Drawing.Size(84, 17);
             this.lblText_ParPrenom.TabIndex = 12;
@@ -118,62 +120,117 @@ namespace Gestion_Personnel.CustomControls
             this.lblText_Recherche.TabIndex = 9;
             this.lblText_Recherche.Text = "Recheche :";
             // 
-            // bunifuCustomDataGrid1
+            // dgvListeEmployes
             // 
-            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
-            this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListeEmployes.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListeEmployes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListeEmployes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListeEmployes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListeEmployes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListeEmployes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.Silver;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Honeydew;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 77);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.ReadOnly = true;
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowHeadersVisible = false;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(450, 309);
-            this.bunifuCustomDataGrid1.TabIndex = 8;
+            this.dgvListeEmployes.EnableHeadersVisualStyles = false;
+            this.dgvListeEmployes.Location = new System.Drawing.Point(8, 112);
+            this.dgvListeEmployes.Name = "dgvListeEmployes";
+            this.dgvListeEmployes.RowHeadersVisible = false;
+            this.dgvListeEmployes.Size = new System.Drawing.Size(493, 414);
+            this.dgvListeEmployes.TabIndex = 16;
+            this.dgvListeEmployes.Click += new System.EventHandler(this.dgvListeEmployes_Click);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Column1";
             this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Column2";
             this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Column3";
             this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox1.Location = new System.Drawing.Point(278, 87);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(124, 19);
+            this.textBox1.TabIndex = 22;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox2.Location = new System.Drawing.Point(145, 87);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(124, 19);
+            this.textBox2.TabIndex = 21;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox3.Location = new System.Drawing.Point(8, 87);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(124, 19);
+            this.textBox3.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(275, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Par prénom :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(142, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Par nom :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Par numéro :";
             // 
             // UCListeEmployes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dgvListeEmployes);
             this.Controls.Add(this.txtRecherchePrenom);
             this.Controls.Add(this.txtRechercheNom);
             this.Controls.Add(this.txtRechercheNum);
@@ -181,10 +238,10 @@ namespace Gestion_Personnel.CustomControls
             this.Controls.Add(this.lblText_ParNom);
             this.Controls.Add(this.lblText_ParNumero);
             this.Controls.Add(this.lblText_Recherche);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Name = "UCListeEmployes";
             this.Size = new System.Drawing.Size(952, 529);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            this.Load += new System.EventHandler(this.UCListeEmployes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmployes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,9 +256,15 @@ namespace Gestion_Personnel.CustomControls
         private System.Windows.Forms.Label lblText_ParNom;
         private System.Windows.Forms.Label lblText_ParNumero;
         private System.Windows.Forms.Label lblText_Recherche;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private System.Windows.Forms.DataGridView dgvListeEmployes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
