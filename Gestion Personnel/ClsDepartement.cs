@@ -30,7 +30,7 @@ namespace Gestion_Personnel
             }
             return -1;
         }
-        public bool ajouter(clsPoste p)
+        public bool Ajouter(clsPoste p)
         {
             if(rechercheNum(p.Num) != -1)
             {
