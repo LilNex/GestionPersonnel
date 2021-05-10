@@ -23,7 +23,6 @@ namespace Gestion_Personnel.CustomControls
         private void UCEmployes_Load(object sender, EventArgs e)
         {
             ucListeEmployes.BringToFront();
-
         }
 
         private void btnListeEmployes_Click(object sender, EventArgs e)

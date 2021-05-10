@@ -73,7 +73,7 @@ namespace Gestion_Personnel.CustomControls
             // 
             // ucListeEmployes
             // 
-            this.ucListeEmployes.Location = new System.Drawing.Point(0, 40);
+            this.ucListeEmployes.Location = new System.Drawing.Point(-3, 40);
             this.ucListeEmployes.Name = "ucListeEmployes";
             this.ucListeEmployes.Size = new System.Drawing.Size(952, 529);
             this.ucListeEmployes.TabIndex = 6;
