@@ -31,6 +31,7 @@ namespace Gestion_Personnel
         {
             this.components = new System.ComponentModel.Container();
             this.pnlGauche = new System.Windows.Forms.Panel();
+            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlActive = new System.Windows.Forms.Panel();
             this.btnParametre = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnX = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -39,15 +40,14 @@ namespace Gestion_Personnel
             this.btnEmployes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlDrag = new System.Windows.Forms.Panel();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
             this.bnfDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
             this.ucDashboard = new Gestion_Personnel.CustomControls.UCDashboard();
-            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -69,6 +69,15 @@ namespace Gestion_Personnel
             this.pnlGauche.Name = "pnlGauche";
             this.pnlGauche.Size = new System.Drawing.Size(200, 568);
             this.pnlGauche.TabIndex = 0;
+            // 
+            // ucProfil1
+            // 
+            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.ucProfil1.ForeColor = System.Drawing.Color.White;
+            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
+            this.ucProfil1.Name = "ucProfil1";
+            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
+            this.ucProfil1.TabIndex = 0;
             // 
             // pnlActive
             // 
@@ -272,7 +281,7 @@ namespace Gestion_Personnel
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnDashboard.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = null;
             this.btnDashboard.Iconimage_right = global::Gestion_Personnel.Properties.Resources.icons8_home_32px1;
@@ -311,23 +320,6 @@ namespace Gestion_Personnel
             this.pnlDrag.Size = new System.Drawing.Size(1150, 32);
             this.pnlDrag.TabIndex = 1;
             // 
-            // btnMinimize
-            // 
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnMinimize.BackgroundImage = global::Gestion_Personnel.Properties.Resources.icons8_minus_24px_1;
-            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Location = new System.Drawing.Point(1086, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -345,6 +337,23 @@ namespace Gestion_Personnel
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.btnMinimize.BackgroundImage = global::Gestion_Personnel.Properties.Resources.icons8_minus_24px_1;
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Location = new System.Drawing.Point(1086, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(32, 32);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // bnfDragControl
             // 
@@ -365,15 +374,6 @@ namespace Gestion_Personnel
             this.pnlMain.Size = new System.Drawing.Size(952, 569);
             this.pnlMain.TabIndex = 2;
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // timer
-            // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
             // ucEmployes
             // 
             this.ucEmployes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -393,14 +393,14 @@ namespace Gestion_Personnel
             this.ucDashboard.Size = new System.Drawing.Size(952, 569);
             this.ucDashboard.TabIndex = 1;
             // 
-            // ucProfil1
+            // bunifuElipse1
             // 
-            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.ucProfil1.ForeColor = System.Drawing.Color.White;
-            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
-            this.ucProfil1.Name = "ucProfil1";
-            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
-            this.ucProfil1.TabIndex = 0;
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frmPrincipal_Directeur
             // 

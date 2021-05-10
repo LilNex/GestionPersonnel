@@ -10,6 +10,17 @@ namespace Gestion_Personnel.CustomControls
             InitializeComponent();
         }
 
+        private void UCAjoutEmploye_Load(object sender, EventArgs e)
+        {
+            cmbDeparts.DataSource = null;
+            cmbDeparts.Items.Add("Choisissez un departement");
+            cmbDeparts.Text = "Choisissez un departement";
+
+            cmbPoste.DataSource = null;
+            cmbPoste.Items.Add("Choisissez un poste");
+            cmbPoste.Text = "Choisissez un poste";
+        }
+
         private void rdbH_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -22,10 +33,7 @@ namespace Gestion_Personnel.CustomControls
 
         
 
-        private void UCAjoutEmploye_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void txtAdresse_TextChanged(object sender, EventArgs e)
         {

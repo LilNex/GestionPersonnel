@@ -15,9 +15,11 @@ namespace Gestion_Personnel
     {
         public CultureInfo cultureInfo = new CultureInfo("fr-FR");
         public frmPrincipal_Directeur()
-        {
+        {   
             InitializeComponent();
             setupForm();
+            clsRFID rFID = new clsRFID();
+            rFID.connectArduino();
         }
         public void setupForm()
         {
