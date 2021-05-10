@@ -21,9 +21,7 @@ namespace Gestion_Personnel
         private char sex;
         private string adresse;
         private int salaire;
-        private string rfid;
-
-
+        private string rfid;        
         public string Nom
         {
             get => nom; 
@@ -37,8 +35,7 @@ namespace Gestion_Personnel
                     throw new Exception("le Prenom ne doit pas contenur des chiffres et des caracteres spécieux");
                 }
             }
-        }
-        
+        }       
         public string Prenom
         {
             get => prenom; set
