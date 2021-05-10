@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+
 using System.Windows.Forms;
 
 namespace Gestion_Personnel.CustomControls
 {
     public partial class UCAjoutEmploye : UserControl
     {
+        //public List<clsDepartememnt> ListeDepartements { get; set; }      to update
         public UCAjoutEmploye()
         {
             InitializeComponent();

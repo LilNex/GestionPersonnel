@@ -69,6 +69,9 @@ namespace Gestion_Personnel.CustomControls
             this.lblText_Badge = new System.Windows.Forms.Label();
             this.txtIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnEffacer = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.grpSexe.SuspendLayout();
             this.SuspendLayout();
@@ -491,9 +494,66 @@ namespace Gestion_Personnel.CustomControls
             this.label4.TabIndex = 56;
             this.label4.Text = "ID Badge : ";
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(827, 481);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 39);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "btnX";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnEffacer
+            // 
+            this.btnEffacer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEffacer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnEffacer.FlatAppearance.BorderSize = 0;
+            this.btnEffacer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEffacer.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEffacer.ForeColor = System.Drawing.Color.White;
+            this.btnEffacer.Image = global::Gestion_Personnel.Properties.Resources.icons8_multiply_26px_4;
+            this.btnEffacer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEffacer.Location = new System.Drawing.Point(827, 435);
+            this.btnEffacer.Name = "btnEffacer";
+            this.btnEffacer.Size = new System.Drawing.Size(113, 39);
+            this.btnEffacer.TabIndex = 59;
+            this.btnEffacer.Text = "Effacer";
+            this.btnEffacer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEffacer.UseVisualStyleBackColor = false;
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnAjouter.FlatAppearance.BorderSize = 0;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouter.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
+            this.btnAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAjouter.Location = new System.Drawing.Point(827, 390);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(113, 39);
+            this.btnAjouter.TabIndex = 60;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAjouter.UseVisualStyleBackColor = false;
+            // 
             // UCAjoutEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.btnEffacer);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtIdBox);
             this.Controls.Add(this.lblText_Badge);
@@ -585,5 +645,8 @@ namespace Gestion_Personnel.CustomControls
         private System.Windows.Forms.Label lblText_Badge;
         private System.Windows.Forms.TextBox txtIdBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEffacer;
+        private System.Windows.Forms.Button btnAjouter;
     }
 }

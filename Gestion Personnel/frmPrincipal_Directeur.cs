@@ -18,8 +18,8 @@ namespace Gestion_Personnel
         {   
             InitializeComponent();
             setupForm();
-            clsRFID rFID = new clsRFID();
-            rFID.connectArduino();
+            //clsRFID rFID = new clsRFID();
+            //rFID.connectArduino();
         }
         public void setupForm()
         {

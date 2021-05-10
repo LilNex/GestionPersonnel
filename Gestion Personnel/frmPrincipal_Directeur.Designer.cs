@@ -31,7 +31,6 @@ namespace Gestion_Personnel
         {
             this.components = new System.ComponentModel.Container();
             this.pnlGauche = new System.Windows.Forms.Panel();
-            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlActive = new System.Windows.Forms.Panel();
             this.btnParametre = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnX = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,10 +43,11 @@ namespace Gestion_Personnel
             this.btnMinimize = new System.Windows.Forms.Button();
             this.bnfDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
-            this.ucDashboard = new Gestion_Personnel.CustomControls.UCDashboard();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
+            this.ucDashboard = new Gestion_Personnel.CustomControls.UCDashboard();
+            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -69,15 +69,6 @@ namespace Gestion_Personnel
             this.pnlGauche.Name = "pnlGauche";
             this.pnlGauche.Size = new System.Drawing.Size(200, 568);
             this.pnlGauche.TabIndex = 0;
-            // 
-            // ucProfil1
-            // 
-            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.ucProfil1.ForeColor = System.Drawing.Color.White;
-            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
-            this.ucProfil1.Name = "ucProfil1";
-            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
-            this.ucProfil1.TabIndex = 0;
             // 
             // pnlActive
             // 
@@ -130,7 +121,7 @@ namespace Gestion_Personnel
             this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
             this.btnX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnX.BorderRadius = 0;
-            this.btnX.ButtonText = "Dashboard";
+            this.btnX.ButtonText = "Departements";
             this.btnX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnX.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
             this.btnX.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,7 +146,7 @@ namespace Gestion_Personnel
             this.btnX.selected = false;
             this.btnX.Size = new System.Drawing.Size(202, 49);
             this.btnX.TabIndex = 4;
-            this.btnX.Text = "Dashboard";
+            this.btnX.Text = "Departements";
             this.btnX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnX.Textcolor = System.Drawing.Color.White;
             this.btnX.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,6 +365,15 @@ namespace Gestion_Personnel
             this.pnlMain.Size = new System.Drawing.Size(952, 569);
             this.pnlMain.TabIndex = 2;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // ucEmployes
             // 
             this.ucEmployes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -393,14 +393,14 @@ namespace Gestion_Personnel
             this.ucDashboard.Size = new System.Drawing.Size(952, 569);
             this.ucDashboard.TabIndex = 1;
             // 
-            // bunifuElipse1
+            // ucProfil1
             // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // timer
-            // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.ucProfil1.ForeColor = System.Drawing.Color.White;
+            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
+            this.ucProfil1.Name = "ucProfil1";
+            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
+            this.ucProfil1.TabIndex = 0;
             // 
             // frmPrincipal_Directeur
             // 
