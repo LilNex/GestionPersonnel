@@ -31,9 +31,10 @@ namespace Gestion_Personnel
         {
             this.components = new System.ComponentModel.Container();
             this.pnlGauche = new System.Windows.Forms.Panel();
+            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
             this.pnlActive = new System.Windows.Forms.Panel();
             this.btnParametre = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnX = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDeparts = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDemandes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGstPaie = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmployes = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -43,11 +44,11 @@ namespace Gestion_Personnel
             this.btnMinimize = new System.Windows.Forms.Button();
             this.bnfDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.ucDepartements = new Gestion_Personnel.CustomControls.UCDepartements();
             this.ucEmployes = new Gestion_Personnel.CustomControls.UCEmployes();
             this.ucDashboard = new Gestion_Personnel.CustomControls.UCDashboard();
-            this.ucProfil1 = new Gestion_Personnel.CustomControls.UCProfil();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlGauche.SuspendLayout();
             this.pnlDrag.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -59,7 +60,7 @@ namespace Gestion_Personnel
             this.pnlGauche.Controls.Add(this.ucProfil1);
             this.pnlGauche.Controls.Add(this.pnlActive);
             this.pnlGauche.Controls.Add(this.btnParametre);
-            this.pnlGauche.Controls.Add(this.btnX);
+            this.pnlGauche.Controls.Add(this.btnDeparts);
             this.pnlGauche.Controls.Add(this.btnDemandes);
             this.pnlGauche.Controls.Add(this.btnGstPaie);
             this.pnlGauche.Controls.Add(this.btnEmployes);
@@ -69,6 +70,15 @@ namespace Gestion_Personnel
             this.pnlGauche.Name = "pnlGauche";
             this.pnlGauche.Size = new System.Drawing.Size(200, 568);
             this.pnlGauche.TabIndex = 0;
+            // 
+            // ucProfil1
+            // 
+            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.ucProfil1.ForeColor = System.Drawing.Color.White;
+            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
+            this.ucProfil1.Name = "ucProfil1";
+            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
+            this.ucProfil1.TabIndex = 0;
             // 
             // pnlActive
             // 
@@ -115,42 +125,42 @@ namespace Gestion_Personnel
             this.btnParametre.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParametre.Click += new System.EventHandler(this.btnParametre_Click);
             // 
-            // btnX
+            // btnDeparts
             // 
-            this.btnX.Activecolor = System.Drawing.Color.LightSkyBlue;
-            this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnX.BorderRadius = 0;
-            this.btnX.ButtonText = "Departements";
-            this.btnX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnX.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.btnX.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnX.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnX.Iconimage = null;
-            this.btnX.Iconimage_right = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
-            this.btnX.Iconimage_right_Selected = null;
-            this.btnX.Iconimage_Selected = null;
-            this.btnX.IconMarginLeft = 0;
-            this.btnX.IconMarginRight = 0;
-            this.btnX.IconRightVisible = true;
-            this.btnX.IconRightZoom = 0D;
-            this.btnX.IconVisible = true;
-            this.btnX.IconZoom = 50D;
-            this.btnX.IsTab = false;
-            this.btnX.Location = new System.Drawing.Point(0, 381);
-            this.btnX.Margin = new System.Windows.Forms.Padding(0);
-            this.btnX.Name = "btnX";
-            this.btnX.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnX.OnHovercolor = System.Drawing.SystemColors.Highlight;
-            this.btnX.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnX.selected = false;
-            this.btnX.Size = new System.Drawing.Size(202, 49);
-            this.btnX.TabIndex = 4;
-            this.btnX.Text = "Departements";
-            this.btnX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnX.Textcolor = System.Drawing.Color.White;
-            this.btnX.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            this.btnDeparts.Activecolor = System.Drawing.Color.LightSkyBlue;
+            this.btnDeparts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnDeparts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeparts.BorderRadius = 0;
+            this.btnDeparts.ButtonText = "Departements";
+            this.btnDeparts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeparts.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
+            this.btnDeparts.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeparts.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDeparts.Iconimage = null;
+            this.btnDeparts.Iconimage_right = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
+            this.btnDeparts.Iconimage_right_Selected = null;
+            this.btnDeparts.Iconimage_Selected = null;
+            this.btnDeparts.IconMarginLeft = 0;
+            this.btnDeparts.IconMarginRight = 0;
+            this.btnDeparts.IconRightVisible = true;
+            this.btnDeparts.IconRightZoom = 0D;
+            this.btnDeparts.IconVisible = true;
+            this.btnDeparts.IconZoom = 50D;
+            this.btnDeparts.IsTab = false;
+            this.btnDeparts.Location = new System.Drawing.Point(0, 381);
+            this.btnDeparts.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDeparts.Name = "btnDeparts";
+            this.btnDeparts.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnDeparts.OnHovercolor = System.Drawing.SystemColors.Highlight;
+            this.btnDeparts.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDeparts.selected = false;
+            this.btnDeparts.Size = new System.Drawing.Size(202, 49);
+            this.btnDeparts.TabIndex = 4;
+            this.btnDeparts.Text = "Departements";
+            this.btnDeparts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeparts.Textcolor = System.Drawing.Color.White;
+            this.btnDeparts.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeparts.Click += new System.EventHandler(this.btnDeparts_Click);
             // 
             // btnDemandes
             // 
@@ -357,6 +367,7 @@ namespace Gestion_Personnel
             // 
             this.pnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlMain.Controls.Add(this.ucDepartements);
             this.pnlMain.Controls.Add(this.ucEmployes);
             this.pnlMain.Controls.Add(this.ucDashboard);
             this.pnlMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -365,14 +376,12 @@ namespace Gestion_Personnel
             this.pnlMain.Size = new System.Drawing.Size(952, 569);
             this.pnlMain.TabIndex = 2;
             // 
-            // bunifuElipse1
+            // ucDepartements
             // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // timer
-            // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            this.ucDepartements.Location = new System.Drawing.Point(0, 0);
+            this.ucDepartements.Name = "ucDepartements";
+            this.ucDepartements.Size = new System.Drawing.Size(949, 565);
+            this.ucDepartements.TabIndex = 2;
             // 
             // ucEmployes
             // 
@@ -393,14 +402,14 @@ namespace Gestion_Personnel
             this.ucDashboard.Size = new System.Drawing.Size(952, 569);
             this.ucDashboard.TabIndex = 1;
             // 
-            // ucProfil1
+            // bunifuElipse1
             // 
-            this.ucProfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(58)))), ((int)(((byte)(79)))));
-            this.ucProfil1.ForeColor = System.Drawing.Color.White;
-            this.ucProfil1.Location = new System.Drawing.Point(0, 0);
-            this.ucProfil1.Name = "ucProfil1";
-            this.ucProfil1.Size = new System.Drawing.Size(200, 175);
-            this.ucProfil1.TabIndex = 0;
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frmPrincipal_Directeur
             // 
@@ -433,7 +442,7 @@ namespace Gestion_Personnel
         private CustomControls.UCProfil ucProfil1;
         private System.Windows.Forms.Panel pnlMain;
         private Bunifu.Framework.UI.BunifuFlatButton btnDashboard;
-        private Bunifu.Framework.UI.BunifuFlatButton btnX;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDeparts;
         private Bunifu.Framework.UI.BunifuFlatButton btnDemandes;
         private Bunifu.Framework.UI.BunifuFlatButton btnGstPaie;
         private Bunifu.Framework.UI.BunifuFlatButton btnEmployes;
@@ -443,5 +452,6 @@ namespace Gestion_Personnel
         private System.Windows.Forms.Timer timer;
         private CustomControls.UCEmployes ucEmployes;
         private CustomControls.UCDashboard ucDashboard;
+        private CustomControls.UCDepartements ucDepartements;
     }
 }

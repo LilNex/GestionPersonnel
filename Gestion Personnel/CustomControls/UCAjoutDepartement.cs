@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Gestion_Personnel.CustomControls
 {
-    public partial class UCDepartements : UserControl
+    public partial class UCAjoutDepartement : UserControl
     {
-        public UCDepartements()
+        public UCAjoutDepartement()
         {
             InitializeComponent();
+        }
+
+        private void UCAjoutDepartement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

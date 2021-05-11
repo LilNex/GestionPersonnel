@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Personnel.CustomControls
 {
-    partial class _UCDepartements
+    partial class UCDepartements
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,99 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAjouterEmploye = new System.Windows.Forms.Button();
-            this.btnListeEmployes = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAjouterPoste = new System.Windows.Forms.Button();
+            this.btnAjouterDeps = new System.Windows.Forms.Button();
+            this.btnListeDeps = new System.Windows.Forms.Button();
+            this.btnListePostes = new System.Windows.Forms.Button();
+            this.ucAjoutDepartement = new Gestion_Personnel.CustomControls.UCAjoutDepartement();
+            this.ucListeDepartement = new Gestion_Personnel.CustomControls.UCListeDepartement();
+            this.ucListePoste = new Gestion_Personnel.CustomControls.UCListePoste();
             this.SuspendLayout();
             // 
-            // btnAjouterEmploye
+            // btnAjouterPoste
             // 
-            this.btnAjouterEmploye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnAjouterEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouterEmploye.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouterEmploye.ForeColor = System.Drawing.Color.White;
-            this.btnAjouterEmploye.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
-            this.btnAjouterEmploye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAjouterEmploye.Location = new System.Drawing.Point(450, 0);
-            this.btnAjouterEmploye.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAjouterEmploye.Name = "btnAjouterEmploye";
-            this.btnAjouterEmploye.Size = new System.Drawing.Size(225, 42);
-            this.btnAjouterEmploye.TabIndex = 7;
-            this.btnAjouterEmploye.Text = "Ajouter un départements";
-            this.btnAjouterEmploye.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAjouterEmploye.UseVisualStyleBackColor = false;
+            this.btnAjouterPoste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnAjouterPoste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterPoste.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterPoste.ForeColor = System.Drawing.Color.White;
+            this.btnAjouterPoste.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
+            this.btnAjouterPoste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAjouterPoste.Location = new System.Drawing.Point(675, 0);
+            this.btnAjouterPoste.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAjouterPoste.Name = "btnAjouterPoste";
+            this.btnAjouterPoste.Size = new System.Drawing.Size(225, 42);
+            this.btnAjouterPoste.TabIndex = 9;
+            this.btnAjouterPoste.Text = "Ajouter un poste";
+            this.btnAjouterPoste.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAjouterPoste.UseVisualStyleBackColor = false;
             // 
-            // btnListeEmployes
+            // btnAjouterDeps
             // 
-            this.btnListeEmployes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.btnListeEmployes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListeEmployes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListeEmployes.ForeColor = System.Drawing.Color.White;
-            this.btnListeEmployes.Image = global::Gestion_Personnel.Properties.Resources.icons8_user_groups_32px;
-            this.btnListeEmployes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListeEmployes.Location = new System.Drawing.Point(0, 0);
-            this.btnListeEmployes.Margin = new System.Windows.Forms.Padding(0);
-            this.btnListeEmployes.Name = "btnListeEmployes";
-            this.btnListeEmployes.Size = new System.Drawing.Size(225, 42);
-            this.btnListeEmployes.TabIndex = 6;
-            this.btnListeEmployes.Text = "Liste des départements";
-            this.btnListeEmployes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnListeEmployes.UseVisualStyleBackColor = false;
+            this.btnAjouterDeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnAjouterDeps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterDeps.ForeColor = System.Drawing.Color.White;
+            this.btnAjouterDeps.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
+            this.btnAjouterDeps.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAjouterDeps.Location = new System.Drawing.Point(450, 0);
+            this.btnAjouterDeps.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAjouterDeps.Name = "btnAjouterDeps";
+            this.btnAjouterDeps.Size = new System.Drawing.Size(225, 42);
+            this.btnAjouterDeps.TabIndex = 7;
+            this.btnAjouterDeps.Text = "Ajouter un départements";
+            this.btnAjouterDeps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAjouterDeps.UseVisualStyleBackColor = false;
+            this.btnAjouterDeps.Click += new System.EventHandler(this.btnAjouterDeps_Click);
             // 
-            // button1
+            // btnListeDeps
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Gestion_Personnel.Properties.Resources.icons8_user_groups_32px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(225, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 42);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Liste des postes";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnListeDeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnListeDeps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListeDeps.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListeDeps.ForeColor = System.Drawing.Color.White;
+            this.btnListeDeps.Image = global::Gestion_Personnel.Properties.Resources.icons8_user_groups_32px;
+            this.btnListeDeps.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListeDeps.Location = new System.Drawing.Point(0, 0);
+            this.btnListeDeps.Margin = new System.Windows.Forms.Padding(0);
+            this.btnListeDeps.Name = "btnListeDeps";
+            this.btnListeDeps.Size = new System.Drawing.Size(225, 42);
+            this.btnListeDeps.TabIndex = 6;
+            this.btnListeDeps.Text = "Liste des départements";
+            this.btnListeDeps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListeDeps.UseVisualStyleBackColor = false;
+            this.btnListeDeps.Click += new System.EventHandler(this.btnListeDeps_Click);
             // 
-            // button2
+            // btnListePostes
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Gestion_Personnel.Properties.Resources.icons8_add_user_male_32px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(675, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 42);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Ajouter un poste";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnListePostes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(174)))), ((int)(((byte)(238)))));
+            this.btnListePostes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListePostes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListePostes.ForeColor = System.Drawing.Color.White;
+            this.btnListePostes.Image = global::Gestion_Personnel.Properties.Resources.icons8_user_groups_32px;
+            this.btnListePostes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListePostes.Location = new System.Drawing.Point(225, 0);
+            this.btnListePostes.Margin = new System.Windows.Forms.Padding(0);
+            this.btnListePostes.Name = "btnListePostes";
+            this.btnListePostes.Size = new System.Drawing.Size(225, 42);
+            this.btnListePostes.TabIndex = 8;
+            this.btnListePostes.Text = "Liste des postes";
+            this.btnListePostes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListePostes.UseVisualStyleBackColor = false;
+            this.btnListePostes.Click += new System.EventHandler(this.btnListePostes_Click);
             // 
-            // _UCDepartements
+            // ucAjoutDepartement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAjouterEmploye);
-            this.Controls.Add(this.btnListeEmployes);
-            this.Controls.Add(this.button1);
-            this.Name = "_UCDepartements";
+            this.ucAjoutDepartement.Location = new System.Drawing.Point(0, 42);
+            this.ucAjoutDepartement.Name = "ucAjoutDepartement";
+            this.ucAjoutDepartement.Size = new System.Drawing.Size(952, 529);
+            this.ucAjoutDepartement.TabIndex = 12;
+            this.ucAjoutDepartement.Load += new System.EventHandler(this.ucAjoutDepartement_Load);
+            // 
+            // ucListeDepartement
+            // 
+            this.ucListeDepartement.Location = new System.Drawing.Point(0, 42);
+            this.ucListeDepartement.Name = "ucListeDepartement";
+            this.ucListeDepartement.Size = new System.Drawing.Size(952, 529);
+            this.ucListeDepartement.TabIndex = 10;
+            // 
+            // ucListePoste
+            // 
+            this.ucListePoste.Location = new System.Drawing.Point(0, 42);
+            this.ucListePoste.Name = "ucListePoste";
+            this.ucListePoste.Size = new System.Drawing.Size(952, 529);
+            this.ucListePoste.TabIndex = 11;
+            // 
+            // UCDepartements
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnAjouterPoste);
+            this.Controls.Add(this.btnAjouterDeps);
+            this.Controls.Add(this.btnListeDeps);
+            this.Controls.Add(this.btnListePostes);
+            this.Controls.Add(this.ucAjoutDepartement);
+            this.Controls.Add(this.ucListeDepartement);
+            this.Controls.Add(this.ucListePoste);
+            this.Name = "UCDepartements";
             this.Size = new System.Drawing.Size(952, 569);
+            this.Load += new System.EventHandler(this.UCDepartements_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnAjouterEmploye;
-        private System.Windows.Forms.Button btnListeEmployes;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAjouterDeps;
+        private System.Windows.Forms.Button btnListeDeps;
+        private System.Windows.Forms.Button btnListePostes;
+        private System.Windows.Forms.Button btnAjouterPoste;
+        private UCListeDepartement ucListeDepartement;
+        private UCListePoste ucListePoste;
+        private UCAjoutDepartement ucAjoutDepartement;
     }
 }

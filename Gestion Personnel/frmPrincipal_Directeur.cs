@@ -64,9 +64,10 @@ namespace Gestion_Personnel
             pnlActive.Top = btnDemandes.Top;
         }
 
-        private void btnX_Click(object sender, EventArgs e)
+        private void btnDeparts_Click(object sender, EventArgs e)
         {
-            pnlActive.Top = btnX.Top;
+            pnlActive.Top = btnDeparts.Top;
+            ucDepartements.BringToFront();
         }
 
         private void timer_Tick(object sender, EventArgs e)

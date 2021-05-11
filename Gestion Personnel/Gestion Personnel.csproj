@@ -69,6 +69,13 @@
     <Compile Include="ClsDepartement.cs" />
     <Compile Include="ClsEmploye.cs" />
     <Compile Include="clsPoste.cs" />
+    <Compile Include="CustomControls\Functions.cs" />
+    <Compile Include="CustomControls\UCAjoutDepartement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCAjoutDepartement.Designer.cs">
+      <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\UCAjoutEmploye.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,12 +87,6 @@
     </Compile>
     <Compile Include="CustomControls\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomControls\UCDepartements.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CustomControls\UCDepartements.Designer.cs">
-      <DependentUpon>UCDepartements.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\UCEmployes.cs">
       <SubType>UserControl</SubType>
@@ -104,6 +105,12 @@
     </Compile>
     <Compile Include="CustomControls\UCListeEmployes.Designer.cs">
       <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\UCListePoste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCListePoste.Designer.cs">
+      <DependentUpon>UCListePoste.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\UCProfil.cs">
       <SubType>UserControl</SubType>
@@ -131,14 +138,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomControls\UCAjoutDepartement.resx">
+      <DependentUpon>UCAjoutDepartement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCAjoutEmploye.resx">
       <DependentUpon>UCAjoutEmploye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomControls\UCDepartements.resx">
-      <DependentUpon>UCDepartements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCEmployes.resx">
       <DependentUpon>UCEmployes.cs</DependentUpon>
@@ -148,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCListeEmployes.resx">
       <DependentUpon>UCListeEmployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UCListePoste.resx">
+      <DependentUpon>UCListePoste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCProfil.resx">
       <DependentUpon>UCProfil.cs</DependentUpon>
