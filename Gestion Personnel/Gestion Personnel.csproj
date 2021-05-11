@@ -54,7 +54,6 @@
     <Compile Include="ClsDepartement.cs" />
     <Compile Include="ClsEmploye.cs" />
     <Compile Include="clsPoste.cs" />
-    <Compile Include="clsRFID.cs" />
     <Compile Include="CustomControls\UCAjoutEmploye.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +72,12 @@
     <Compile Include="CustomControls\UCEmployes.Designer.cs">
       <DependentUpon>UCEmployes.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\UCListeDepartement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\UCListeDepartement.Designer.cs">
+      <DependentUpon>UCListeDepartement.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\UCListeEmployes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +89,12 @@
     </Compile>
     <Compile Include="CustomControls\UCProfil.Designer.cs">
       <DependentUpon>UCProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\_UCDepartements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\_UCDepartements.Designer.cs">
+      <DependentUpon>_UCDepartements.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -108,11 +119,17 @@
     <EmbeddedResource Include="CustomControls\UCEmployes.resx">
       <DependentUpon>UCEmployes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\UCListeDepartement.resx">
+      <DependentUpon>UCListeDepartement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCListeEmployes.resx">
       <DependentUpon>UCListeEmployes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\UCProfil.resx">
       <DependentUpon>UCProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\_UCDepartements.resx">
+      <DependentUpon>_UCDepartements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal_Directeur.resx">
       <DependentUpon>frmPrincipal_Directeur.cs</DependentUpon>
