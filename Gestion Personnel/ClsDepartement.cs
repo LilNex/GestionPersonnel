@@ -8,14 +8,16 @@ namespace Gestion_Personnel
 {
     class ClsDepartement
     {
-        private string nom;
-        private string num;
-        private List<clsPoste> listePoste = new List<clsPoste>();
+        
         public static List<ClsDepartement> ListeDepartement = new List<ClsDepartement>();
 
-        public string Nom { get => nom; set => nom = value; }
-        // CONDITION format : XXX000
+        private string num;
+        private string nom;
+        private List<clsPoste> listePoste = new List<clsPoste>();
+
         public string Num { get => num; set => num = value; }
+        // CONDITION format : XXX000
+        public string Nom { get => nom; set => nom = value; }
         internal List<clsPoste> ListePoste { get => listePoste; set => listePoste = value; }
 
         public ClsDepartement(string nom,string num)
@@ -34,16 +36,16 @@ namespace Gestion_Personnel
             }
             return -1;
         }
-        public bool Ajouter(clsPoste p)
+        public bool Ajouter(clsPoste poste)
         {
-            if(rechercheNum(p.Num) != -1)
+            if(rechercheNum(poste.Num) != -1)
             {
                 return false;
             }
             else
             {
 
-                ListePoste.Add(p);
+                ListePoste.Add(poste);
                 return true;
             }
         }

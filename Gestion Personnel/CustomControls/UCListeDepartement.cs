@@ -14,7 +14,7 @@ namespace Gestion_Personnel.CustomControls
     {
         public event Action reloadForm;
 
-        public DataGridView dgvListeEmploye { get=> dgvListeEmployes; set=> dgvListeEmployes = value; }
+        public DataGridView dgvListeEmploye { get=> dgvListeDeps; set=> dgvListeDeps = value; }
         public UCListeDepartement()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Gestion_Personnel.CustomControls
         
         public void loadForm()
         {
-            dgvListeEmployes.DataSource = ClsDepartement.ListeDepartement;
+            dgvListeDeps.DataSource = ClsDepartement.ListeDepartement;
         }
         private void UCListeDepartement_Load(object sender, EventArgs e)
         {
