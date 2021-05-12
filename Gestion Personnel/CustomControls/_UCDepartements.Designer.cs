@@ -137,9 +137,9 @@
             this.Controls.Add(this.btnAjouterDeps);
             this.Controls.Add(this.btnListeDeps);
             this.Controls.Add(this.btnListePostes);
-            this.Controls.Add(this.ucAjoutDepartement);
             this.Controls.Add(this.ucListeDepartement);
             this.Controls.Add(this.ucListePoste);
+            this.Controls.Add(this.ucAjoutDepartement);
             this.Name = "UCDepartements";
             this.Size = new System.Drawing.Size(952, 569);
             this.Load += new System.EventHandler(this.UCDepartements_Load);

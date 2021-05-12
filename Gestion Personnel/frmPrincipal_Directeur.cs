@@ -67,6 +67,7 @@ namespace Gestion_Personnel
         private void btnDeparts_Click(object sender, EventArgs e)
         {
             pnlActive.Top = btnDeparts.Top;
+            ucDepartements.loadForm();
             ucDepartements.BringToFront();
         }
 

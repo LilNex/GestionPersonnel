@@ -9,13 +9,14 @@ namespace Gestion_Personnel
     class clsPoste
     {
         private  string nom;
-        private int num;
-        public static List<ClsEmploye> listeDesEmployé;
+        private string num;
+        private List<ClsEmploye> listeDesEmployé = new List<ClsEmploye>();
+
 
         public string Nom { get => nom; set => nom = value; }
-        public int Num { get => num; set => num = value; }
+        public string Num { get => num; set => num = value; }
 
-        public clsPoste(string nom,int num)
+        public clsPoste(string nom,string num)
         {
             this.nom = nom;
             this.num = num;

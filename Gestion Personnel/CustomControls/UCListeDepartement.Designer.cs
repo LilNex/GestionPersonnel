@@ -320,6 +320,7 @@
             this.Controls.Add(this.lblText_Departements);
             this.Name = "UCListeDepartement";
             this.Size = new System.Drawing.Size(952, 529);
+            this.Load += new System.EventHandler(this.UCListeDepartement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeEmployes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

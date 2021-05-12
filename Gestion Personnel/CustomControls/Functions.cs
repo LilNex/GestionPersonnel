@@ -21,6 +21,10 @@ namespace Gestion_Personnel.CustomControls
                 {
                     ((RadioButton)x).Checked = false;
                 }
+                if (x is DataGridView)
+                {
+                    ((DataGridView)x).DataSource = null;
+                }
                 if (x is PictureBox)
                 {
                     ((PictureBox)x).Image = null;
@@ -29,6 +33,7 @@ namespace Gestion_Personnel.CustomControls
                 {
                     clearForm(x);
                 }
+
             }
         }
     }

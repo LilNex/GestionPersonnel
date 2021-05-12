@@ -9,21 +9,25 @@ namespace Gestion_Personnel
     class ClsDepartement
     {
         private string nom;
-        private int num;
-        public  static List<clsPoste> listePoste;
+        private string num;
+        private List<clsPoste> listePoste = new List<clsPoste>();
+        public static List<ClsDepartement> ListeDepartement = new List<ClsDepartement>();
 
         public string Nom { get => nom; set => nom = value; }
-        public int Num { get => num; set => num = value; }
-        public ClsDepartement(string nom,int num)
+        // CONDITION format : XXX000
+        public string Num { get => num; set => num = value; }
+        internal List<clsPoste> ListePoste { get => listePoste; set => listePoste = value; }
+
+        public ClsDepartement(string nom,string num)
         {
             Nom = nom;
             Num = num;
         }
-        public int rechercheNum(int num)
+        public int rechercheNum(string num)
         {
-            for (int i = 0; i < listePoste.Count(); i++)
+            for (int i = 0; i < ListePoste.Count(); i++)
             {
-                if(listePoste[i].Num == num)
+                if(ListePoste[i].Num == num)
                 {
                     return i;
                 }
@@ -39,7 +43,7 @@ namespace Gestion_Personnel
             else
             {
 
-                listePoste.Add(p);
+                ListePoste.Add(p);
                 return true;
             }
         }
