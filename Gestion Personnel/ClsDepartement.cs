@@ -14,6 +14,7 @@ namespace Gestion_Personnel
         private string num;
         private string nom;
         private List<clsPoste> listePoste = new List<clsPoste>();
+        private int id;
 
         public string Num { get => num; set => num = value; }
         // CONDITION format : XXX000
